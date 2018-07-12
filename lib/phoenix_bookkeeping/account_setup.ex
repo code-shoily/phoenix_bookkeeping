@@ -1,0 +1,2 @@
+defmodule PhoenixBookkeeping.AccountSetup do
+end
