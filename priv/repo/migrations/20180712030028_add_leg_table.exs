@@ -6,7 +6,7 @@ defmodule PhoenixBookkeeping.Repo.Migrations.AddLegTable do
       add(:id, :uuid, primary_key: false)
       add(:transaction, references(:transaction))
       add(:account_id, references(:account))
-      add(:amount, :decimal)
+      add(:amount, :decimal, precision: 13, scale: 2)
       add(:description, :string)
 
       timestamps()

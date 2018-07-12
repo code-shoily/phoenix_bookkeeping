@@ -6,7 +6,7 @@ defmodule PhoenixBookkeeping.Repo.Migrations.AddStatementLineTable do
       add(:id, :uuid, primary_key: true)
       add(:date, :utc_datetime)
       add(:statement_import_id, references(:statement_import))
-      add(:amount, :decimal)
+      add(:amount, :decimal, precision: 13, scale: 2)
       add(:description, :string)
       add(:type, :string)
       add(:transaction_id, references(:transaction))
