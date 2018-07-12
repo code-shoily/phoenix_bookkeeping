@@ -1,0 +1,2 @@
+defmodule PhoenixBookkeeping.TransactionManagement do
+end
