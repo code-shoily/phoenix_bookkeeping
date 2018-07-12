@@ -5,7 +5,7 @@ defmodule PhoenixBookkeeping.Repo.Migrations.AddLegTable do
     create table(:leg, primary_key: false) do
       add(:id, :uuid, primary_key: false)
       add(:transaction, references(:transaction))
-      add(:account, references(:account))
+      add(:account_id, references(:account))
       add(:amount, :decimal)
       add(:description, :string)
 
