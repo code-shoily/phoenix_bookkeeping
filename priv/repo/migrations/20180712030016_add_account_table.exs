@@ -10,6 +10,7 @@ defmodule PhoenixBookkeeping.Repo.Migrations.AddAccountTable do
       add(:type, :string, size: 10)
       add(:is_bank_account, :boolean)
       add(:currencies, {:array, :string})
+      timestamps()
     end
   end
 end
