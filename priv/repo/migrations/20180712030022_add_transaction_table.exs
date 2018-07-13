@@ -4,7 +4,7 @@ defmodule PhoenixBookkeeping.Repo.Migrations.AddTransactionTable do
   def change do
     create table(:transaction, primary_key: false) do
       add(:id, :uuid, primary_key: true)
-      add(:date, :utc_datetime)
+      add(:date, :utc_datetime, default: fragment("NOW()"))
       add(:description, :string)
       timestamps()
     end
