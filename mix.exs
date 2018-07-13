@@ -39,7 +39,8 @@ defmodule PhoenixBookkeeping.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false}
+      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
+      {:ex_doc, "~> 0.18.0", only: :dev, runtime: false}
     ]
   end
 
